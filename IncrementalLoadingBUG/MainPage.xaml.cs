@@ -28,7 +28,7 @@ namespace IncrementalLoadingBUG
             this.InitializeComponent();
             ListViewElement.ItemsSource = new List<GeneratorIncrementalLoadingClass<string>>()
             {
-                new GeneratorIncrementalLoadingClass<string>(100, i => { return i.ToString(); }),
+                new GeneratorIncrementalLoadingClass<string>(1000, i => { return i.ToString(); }),
             };
         }
     }
